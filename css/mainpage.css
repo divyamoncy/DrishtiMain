@@ -155,7 +155,8 @@ vertical-align: middle;
   font-size: 1.2rem;
 }
 .wsmodalimage{
-  height: 80vh; margin: auto;
+  height: 80vh; 
+  margin: auto;
   object-fit: cover;
 }
 nav ul.inline li a{
@@ -207,7 +208,9 @@ nav ul.inline li a{
 .wsname{
   height:10vh;
 }
-
+.wsmodalimage{
+  height:50vh;
+}
 
 
   }
