@@ -1,0 +1,315 @@
+#navbar {
+  top: -70px;
+  transition: top 0.3s;
+}
+
+body{
+  background-color: #e3e3e3;
+
+
+}
+.social a{
+  text-decoration: none;
+  color: inherit;
+  border:none;
+  background: transparent;
+
+}
+.social a : hover{
+  text-decoration: none;
+  color:inherit;
+  border: none;
+  background:transparent;
+}
+
+
+.card{
+  font-size: 1.3rem;
+}
+.card-title{
+  font-size: 2.0rem;
+  font-style: bold;
+}
+
+.card1{
+ background: white;
+border-color:rgba(0,0,0,0);
+color:#04171E;
+}
+.card1 button{
+  color:#04171E;
+  border-color:#04171E;
+}
+.card2{
+  background: white;
+border-color:rgba(0,0,0,0);
+color:#04171E;
+}
+.card2 button{
+  color:#04171E;
+  border-color:#04171E;
+}
+.card3{
+
+background: white/*#57a1fc*/;
+border-color:rgba(0,0,0,0);
+color:#04171E;
+}
+.card3 button{
+  color:#04171E;
+  border-color:#04171E;
+}
+.card-body a{
+  background: transparent;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+ }
+
+a:hover{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+  .card-paper{
+    margin: auto; border-bottom-left-radius: 15px 255px;
+    border-top-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    transition: all 235ms ease 0s;
+    box-shadow: 15px 28px 25px -18px rgba(0,0,0,.2);
+  }
+
+
+
+.tile img{
+  height:25vh;
+  margin:auto;
+}
+.tile {
+  text-align: center;
+}
+
+.wsname{
+  padding-top: 3vh;
+  font-size: 1.2rem;
+  height:13vh;
+  text-transform: none;
+}
+.wstile{
+  text-align: center;
+}
+.wstile img{
+height:30vh;
+margin:auto;
+vertical-align: middle;
+}
+
+
+.footerdiv{
+  padding: 0px;
+  overflow-x: hidden;
+  overflow:hidden;
+}
+.footercard{
+  width:103vw;
+  overflow-x: hidden;
+  background-color: white;
+  
+  margin-bottom:0px;
+   margin: auto; 
+   border-bottom-left-radius: 225px 15px;;
+    border-bottom-right-radius: 15px 225px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    transition: all 235ms ease 0s;
+    box-shadow: 15px 28px 25px -18px rgba(0,0,0,.2);
+    overflow: hidden;
+    font-size: 1.6rem;
+
+
+}
+.footercard .card-title{
+  font-size: 1.6rem;
+}
+.footerrow{
+   margin-bottom:0px;
+   overflow :hidden;
+
+}
+.footercard img{
+  height: 7vh;
+ 
+}
+.footercontent{
+  overflow:hidden;
+}
+.footercontent col{
+  padding:0px;
+}
+.footercontent .card-text{
+  font-size: 1.2rem;
+}
+.wsmodalimage{
+  height: 50vh; margin: auto;
+  object-fit: cover;
+}
+nav ul.inline li a{
+  font-size: 1rem;
+}
+
+
+
+
+
+#overlay {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0.08;
+}
+
+#scene {
+    padding: 0;
+    margin: 0;
+    width: 115%;
+    height: 120vh;
+    overflow: hidden;
+    top: -5%;
+    left: -5%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;    
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 101;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.wrapper img {
+  width: 350px;
+  height: auto;
+}
+
+.layer {
+    width: 110%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.layer2 {
+    background-image: url(http://i62.tinypic.com/fx5wd1.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -5%;
+    top: -5%;
+}
+
+.layer1 {
+    background-image: url(http://i60.tinypic.com/sp94ls.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -5%;
+    top: -5%;
+}
+
+@media (max-width:1200px) and (min-width:700px) {
+     .wrapper img {
+        width: 220px;
+        height: auto;
+    } 
+}
+
+@media (max-width:700px) {
+    .layer2 {
+        background-size: cover;
+        background-position: center;
+        width: 167%;
+        height: 77vh;
+        left: -69%;
+        top: 27%;
+    }
+    
+    .layer1 {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 115%;
+        left: -5%;
+        top: -1%;
+    }    
+    
+    .wrapper img {
+        width: 180px;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1366px) and (max-width:1800px){
+
+
+.footercard img{
+  height: 4vh;
+ 
+}
+
+}
+@media (min-width: 900px) and (max-width: 1025px){
+.wsmodalimage{
+  height:30vh;
+}
+
+.footercard img{
+  height: 4vh;
+ 
+}
+
+}
+@media  (max-width: 770px) and (min-width: 760px){
+  .footercard img{
+  height: 3vh;
+ 
+}
+
+}
+
+
+@media (max-width: 480px){
+
+
+.wsname{
+  height:10vh;
+}
+
+
+
+  }

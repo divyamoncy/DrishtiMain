@@ -1,0 +1,729 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+@-webkit-keyframes collegeanim {
+  0% {
+    -webkit-transform:translateY(200px);
+     transform:translateY(100px);
+ }
+ 100%{
+  -webkit-transform:translateY(0px);
+     transform:translateY(0px);
+ }
+}
+
+@keyframes collegeanim {
+ 0% {
+  -webkit-transform:translateY(300px);
+   transform:translateY(300px);
+}
+100%{
+-webkit-transform:translateY(0px);
+   transform:translateY(0px);
+}
+}
+
+@-webkit-keyframes walkwayanim {
+  0% {
+    -webkit-transform:translateY(200px);
+     transform:translateY(200px);
+ }
+ 100%{
+  -webkit-transform:translateY(0px);
+     transform:translateY(0px);
+ }
+}
+
+@keyframes walkwayanim {
+  0% {
+    -webkit-transform:translateY(200px);
+     transform:translateY(200px);
+ }
+ 100%{
+  -webkit-transform:translateY(0px);
+     transform:translateY(0px);
+ }
+}
+
+
+
+
+@-webkit-keyframes landanim {
+  0% {
+    -webkit-transform:translateY(60px);
+     transform:translateY(60px);
+ }
+ 100%{
+  -webkit-transform:translateY(0px);
+     transform:translateY(0px);
+ }
+}
+
+@keyframes landanim {
+  0% {
+    -webkit-transform:translateY(60px);
+     transform:translateY(60px);
+ }
+ 100%{
+  -webkit-transform:translateY(0px);
+     transform:translateY(0px);
+ }
+}
+@-webkit-keyframes balloonanim {
+  0% {
+    bottom:0vh;
+ }
+ 100%{
+  bottom:55vh;
+ }
+}
+
+@keyframes balloonanim {
+  0% {
+    bottom:0vh;
+ }
+ 100%{
+  bottom:55vh;
+ }
+}
+@-webkit-keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 40vh;
+  }
+}
+
+@keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 40vh;
+  }
+}
+@-webkit-keyframes littlecloudanim {
+  0% {
+    left:0vh;
+ }
+ 100%{
+  left:55vh;
+ }
+}
+
+@keyframes littlecloudanim {
+  0% {
+    left:0vh;
+ }
+ 100%{
+  left:40vh;
+ }
+}
+@-webkit-keyframes bigcloudanim {
+  0% {
+    right:0vh;
+ }
+ 100%{
+  right:45vh;
+ }
+}
+
+@keyframes bigcloudanim {
+  0% {
+    right:0vh;
+ }
+ 100%{
+  right:45vh;
+ }
+}
+@-webkit-keyframes balloon2anim {
+  0% {
+    bottom:0vh;
+ }
+ 100%{
+  bottom:40vh;
+ }
+}
+
+@keyframes balloon2anim {
+  0% {
+    bottom:0vh;
+ }
+ 100%{
+  bottom:40vh;
+ }
+}
+
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes opacanim {
+  0% {
+   opacity: 100;
+   margin-bottom: -10vh; 
+  }
+  100% {
+   opacity:100;
+   margin-bottom: 0vh;
+  }
+}
+@keyframes opacanim {
+   0% {
+   opacity: 100;
+  margin-bottom: -10vh; 
+  }
+  100% {
+   opacity:100;
+  margin-bottom: 0vh;
+  }
+}
+
+
+@-webkit-keyframes suninitopac {
+  0% {
+   opacity: 0;
+  
+  }
+  100% {
+   opacity:0;
+  
+  }
+}
+@keyframes suninitopac {
+   0% {
+   opacity: 0;
+  
+  }
+  100% {
+   opacity:0;
+  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+  overflow-y: hidden;
+}
+
+
+.ctext{
+  margin-top: 6vh;
+  font-family: 'Alfa Slab One', cursive;
+ 
+
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.csoon{
+  font-size: 4vh;
+  -webkit-animation: suninitopac 2.5s linear;
+          animation: suninitopac 2.5s linear ;
+}
+.broch{
+  background-color:  #FFC300;
+  outline: none;
+  border-width: 0px;
+  border-radius: 3px;
+  font-size: 3vh;
+  padding: 1.5vh;
+  display: block; margin: 0 auto;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ -webkit-animation: suninitopac 2.5s linear;
+          animation: suninitopac 2.5s linear ;
+}
+
+.ctext a{
+  color:black;
+  text-decoration: none;
+  outline: none;
+
+}
+.ctext a :hover{
+  color:black;
+  text-decoration: none;
+  outline: none;
+
+}
+.ctext button : hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.drishti{
+  position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    bottom: 40vh;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+   
+  height:35vh;
+  z-index: 10;
+  -webkit-animation: drishanim 2s ease-in-out ;
+  animation: drishanim 2s ease-in-out ;
+  animation-delay: 1s;
+  
+
+
+}
+.drishtientry{
+  -webkit-animation: suninitopac 1s linear;
+          animation: suninitopac 1s linear ;
+
+}
+/*.drishtiup{
+    -webkit-animation:balloon1 6s ease-in-out infinite;
+  -moz-animation:balloon1 6s ease-in-out infinite;
+  -o-animation:balloon1 6s ease-in-out infinite;
+  animation:balloon1 6s ease-in-out infinite;
+  animation-delay: 4s;
+
+}*/
+.earth{
+  /*position:absolute;
+  top:40vh;
+  left:70vh;*/
+  position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    bottom: 0%;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+      -webkit-animation: opacanim 1s linear;
+          animation: opacanim 1s linear ;
+   
+  height:60vh;
+  z-index: -1;
+  
+
+
+}
+.land{
+  /*position:absolute;
+  top:60vh;
+  left:38vw;*/
+  position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    bottom:0vh; 
+    
+
+       margin-right: auto;
+    margin-left: auto;
+  z-index:2;
+  width:50vw;
+  -webkit-animation: landanim 1.5s ease-in-out ;
+          animation: landanim 1.5s ease-in-out ;
+}
+
+
+
+.college{
+   position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    bottom:9vh;
+    margin-right: auto;
+    margin-left: auto;
+  z-index:1;
+  width:25vw;
+ -webkit-animation: collegeanim 1.5s ease-in-out ;
+animation: collegeanim 1.5s ease-in-out;
+}
+.walkway{
+   position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    bottom:-3vh;
+   
+    margin-right: auto;
+    margin-left: auto;
+  z-index:8;
+  height:12vh;
+  width:30vw;
+  -webkit-animation: walkwayanim 1s ease-in-out ;
+animation: walkwayanim 1s ease-in-out;
+  
+}
+.balloon{
+  bottom:55vh;
+  position: fixed;
+  left: 45vh;
+  margin-right: auto;
+  margin-left: auto;
+  z-index:1;
+  -webkit-animation: balloonanim 1s ease-in-out ;
+  animation: balloonanim 1s ease-in-out ;
+
+}
+.balloon2{
+  bottom:40vh;
+  position: fixed;
+  width:5vh; 
+  right: 40vh;
+  margin-right: auto;
+  margin-left: auto;
+  z-index:1;
+  -webkit-animation: balloon2anim 1.2s ease-in-out ;
+  animation: balloon2anim 1.2s ease-in-out ;
+
+}
+.bigballoon{
+  bottom:55vh;
+  position: fixed;
+  right: 40vh;
+  margin-right: auto;
+  margin-left: auto;
+  z-index:1;
+  -webkit-animation: balloonanim 1.7s ease-in-out ;
+  animation: balloonanim 1.7s ease-in-out ;
+
+}
+.bigcloud{
+  bottom:68vh;
+  position: fixed;
+  right: 45vh;
+  margin-right: auto;
+  margin-left: auto;
+  z-index:1;
+  -webkit-animation: bigcloudanim 2s ease-in-out ;
+  animation: bigcloudanim 2s ease-in-out ;
+
+}
+.littlecloud{
+  bottom:75vh;
+  position: fixed;
+  left: 40vh;
+  margin-right: auto;
+  margin-left: auto;
+  z-index:1;
+  -webkit-animation: littlecloudanim 3s ease-in-out ;
+  animation: littlecloudanim 3s ease-in-out ;
+
+}
+.rot {
+  -webkit-animation: rotate-center 5s linear infinite both;
+          animation: rotate-center 5s linear infinite both;
+          animation-delay: 3.2s;
+}
+
+
+.divan{
+  -webkit-animation: opacanim 1.5s ease-in-out ;
+          animation: opacanim 1.5s ease-in-out ;
+          animation-delay: 2s;
+
+}
+
+.sunaadyam{
+  -webkit-animation: suninitopac 2s linear;
+          animation: suninitopac 2s linear ;
+         
+}
+
+@media (max-width: 1025px){
+   .earth{
+  
+  height:70vw;
+  bottom:0vh;
+
+}
+.land{
+  width:90vw;
+  bottom: 0vh;
+}
+.college{
+  bottom:4vh;
+  width:40vh;
+}
+.walkway{
+  height:7vh;
+  bottom:-3vh;
+}
+.drishti{
+  bottom:30%;
+  height:35vh;
+  
+}
+.balloon{
+  left:10vh;
+
+}
+.balloon2{
+  right:8vh;
+
+}
+.bigballoon{
+  right:2vh;
+}
+.littlecloud{
+
+}
+@-webkit-keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 30vh;
+  }
+}
+
+@keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 30vh;
+  }
+}
+
+}
+@media (max-width: 770px){
+ .earth{
+  
+  height:60vw;
+  bottom:0vh;
+
+}
+.land{
+  width:80vw;
+  bottom: 0vh;
+}
+.balloon{
+  left:10vh;
+
+}
+.balloon2{
+  right:8vh;
+
+}
+.bigballoon{
+  right:10vh;
+}
+.littlecloud{
+
+}
+.college{
+  bottom:4.5vh;
+  width:35vh;
+}
+.walkway{
+  height:7.5vh;
+  bottom:-3vh;
+}
+.drishti{
+  bottom:25%;
+  height:40vh;
+  
+}
+@-webkit-keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 25vh;
+  }
+}
+
+@keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 25vh;
+  }
+}
+
+.bigcloud{
+
+}
+}
+@media (max-width: 480px){
+ .earth{
+  
+  height:40vh;
+  bottom:0vh;
+
+}
+.land{
+  
+  bottom: 0vh;
+  width:80vw;
+}
+.balloon{
+  left:10vh;
+
+}
+.balloon2{
+  right:8vh;
+
+}
+.bigballoon{
+  right:10vh;
+}
+.littlecloud{
+
+}
+.bigcloud{
+
+}
+.college{
+  bottom:3.4vh;
+  width:27vh;
+}
+.walkway{
+  height:6.4vh;
+  bottom:-3vh;
+}
+.drishti{
+  bottom:20%;
+  height:34vh;
+}
+@-webkit-keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 20vh;
+  }
+}
+
+@keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 20vh;
+  }
+}
+}
+@media (max-width: 360px){
+ .earth{
+  
+  height:70vw;
+
+}
+.land{
+  width:57vh;
+}
+.balloon{
+  left:10vh;
+
+}
+.balloon2{
+  right:8vh;
+
+}
+.bigballoon{
+  right:10vh;
+}
+.littlecloud{
+
+}
+.bigcloud{
+
+}
+.college{
+  bottom:3.3vh;
+  width:33vh;
+}
+.walkway{
+  height:6.3vh;
+  bottom:-3vh;
+}
+.drishti{
+  bottom:22%;
+  height:32vh;
+}
+@-webkit-keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 22vh;
+  }
+}
+
+@keyframes drishanim {
+ 
+  from {
+    bottom: -60vh;
+  }
+  to {
+    bottom: 22vh;
+  }
+}
+}
