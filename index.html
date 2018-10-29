@@ -60,7 +60,16 @@
 
         <img alt="logo" src="img/drishtianimated.svg" class="drishtilogo" style="border:none;border-radius: 0px;">   
         
+<span class="scroll-btn" id="scrollbutton">
+  <a href="#scrolltarget">
+    <span class="mouse">
+      <span>
+      </span>
+    </span>
+  </a>
+  
 
+</span>  
        
      
   </div>
@@ -68,18 +77,12 @@
 
  
 
-<!-- Moncy ith onnu nokkaney
-<div class="row flex-center scroll-downs" style="height: 100vh; top: 100vh;">
-  <div class="mousey">
-    <div class="scroller"></div>
-
-  </div>
-</div>  -->      
 
 
 
 
-<div class="row flex-center" >
+
+<div class="row flex-center" id="scrolltarget" >
   
 
 <div class="sm-12 md-10 lg-10 col align-middle" id="about">
@@ -194,7 +197,17 @@ Disasters affect people from all walks of life on a tremendous scale every year,
   </div>
 </div>
 
+<script> document.querySelectorAll('a[href^="#scrolltarget"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: "start"
+        });
+    });
+});
+</script>
 
 </body>
 </html>
