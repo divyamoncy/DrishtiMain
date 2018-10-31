@@ -89,11 +89,14 @@
 	<div class="card card-paper card3">
   				<div class="card-body">
               <div class="row">
-              <div class="col sm-12 md-5 lg-5 align-middle"><img src="img/cetoutline_animated.svg"></div>
+              <div class="col sm-12 md-5 lg-5 align-middle"><img src="img/cetoutline_animated.svg" class="cardimg"></div>
               <div class="col sm-12 md-7 lg-7">
     					<h4 class="card-title">College of Engineering, Trivandrum</h4>
     					
-    					<p class="card-text" style="text-align: justify;">Founded in 1939 during the reign of the Travancore King, Sree Chithira Thirunal Balarama Varma, College of Engineering, Trivandrum, commonly known as CET, is the first Engineering college in Kerala. Since inception, CET continues to maintain its excellence in technical education and research in the state. Drishti is a unanimous movement focusing its gaze upon the wonders of the All-Seeing Eye to not only be enthralled but be inspired to progress. An asset bestowed with every Cetian to generate transform and evolve, Drishti portrays its legacy through a fusion of technology and vision at its best. Drishti, the much awaited tech fest of CET has always set the best example for technical brilliance and sheer craftsmanship.</p>
+    					<p class="card-text" style="text-align: justify;">
+
+                <span class="more">Founded in 1939 during the reign of the Travancore King, Sree Chithira Thirunal Balarama Varma, College of Engineering, Trivandrum, commonly known as CET, is the first Engineering college in Kerala. Since inception, CET continues to maintain its excellence in technical education and research in the state. Drishti is a unanimous movement focusing its gaze upon the wonders of the All-Seeing Eye to not only be enthralled but be inspired to progress. An asset bestowed with every Cetian to generate transform and evolve, Drishti portrays its legacy through a fusion of technology and vision at its best. Drishti, the much awaited tech fest of CET has always set the best example for technical brilliance and sheer craftsmanship.
+                </span></p>
     					
             </div>
           </div>
@@ -107,12 +110,12 @@
          <div class="card card-paper card2" >
               <div class="card-body">
                 <div class="row">
-              <div class="col sm-12 md-5 lg-5 align-middle"><img src="img/thrive_black.svg"></div>
+              <div class="col sm-12 md-5 lg-5 align-middle"><img src="img/thrive_black.svg" class="cardimg"></div>
               <div class="col sm-12 md-7 lg-7">
                   <h4 class="card-title">#Thrive</h4>
                   
                   <p class="card-text" style="text-align: justify;">
-Disasters affect people from all walks of life on a tremendous scale every year, whether it be on a personal or business aspect. Without holding back until another calamity strikes, we at Drishti strive to work together to do our part in reducing the intensity of the aftermath of such unforeseen cataclysm. Bringing forward some of the finest ideas from the most innovative minds and converging different aspects of technological evolution, Drishti sets the platform to develop action plans and put them to practice so as to help deal with all humanitarian aspects of emergencies and thus preserve maximum lives and property in the face of another disaster. Believing in the young engineering minds and rising together with technology, we will endure and withstand every odd.
+<span class="more">Disasters affect people from all walks of life on a tremendous scale every year, whether it be on a personal or business aspect. Without holding back until another calamity strikes, we at Drishti strive to work together to do our part in reducing the intensity of the aftermath of such unforeseen cataclysm. Bringing forward some of the finest ideas from the most innovative minds and converging different aspects of technological evolution, Drishti sets the platform to develop action plans and put them to practice so as to help deal with all humanitarian aspects of emergencies and thus preserve maximum lives and property in the face of another disaster. Believing in the young engineering minds and rising together with technology, we will endure and withstand every odd.</span>
 </p>
               </div></div>
 
@@ -213,6 +216,41 @@ Ankith +91 9495337488
     });
 });
 </script>
+<script type="text/javascript">$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 300;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read more";
+    var lesstext = "Show less";
+    
 
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});</script>
 </body>
 </html>

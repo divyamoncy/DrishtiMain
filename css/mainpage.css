@@ -222,6 +222,19 @@ article .article-title{
 }
 
 
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+.cardimg{
+  
+  margin: auto;
+}
+
+
 @-webkit-keyframes ani-mouse {
   0% {
   opacity: 1;
