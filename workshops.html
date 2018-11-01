@@ -1251,32 +1251,30 @@ to your taste. So what are you waiting for? Hurry up and confirm your participat
         <article class="article">
             <div class="row">
         <div class="sm-12 md-4 lg-4 col align-middle"  style="padding: 2vh;margin: 0">
-          <img src="img/workshops/engineover.jpg" class="wsmodalimage" >
+          <img src="img/workshops/engineoverhaul.jpeg" class="wsmodalimage" >
         </div>
         <div class="sm-12 md-8 lg-8 col align-middle" style="padding: 5vh;margin: 0">
           <h1 class="article-title" align="center" >Engine Overhauling</h1>
-          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;"><strong>"If you judge a book by its cover, you may miss out on an amazing story!"</strong><br><br>
+          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;"><strong>"If you judge a book by its cover, you might miss out on an amazing story. "</strong><br><br>
+Would you be thrilled if those books were replaced with the roaring engines ; the rhythmic beats by the pistons ; and what more? If you crave to get yourself into the world of these hurricanes, then YES!! You are at the right place.<br><br>
+Wanna dig deep down the engines?<br>
+Wanna discover a new dimension for your existence?<br>
+Yes...! We knew you could'nt resist the offer. Come join us at College of Engineering, Trivandrum for the Engine Overhauling Workshop on the 17th and 18th of November at our prestigious tech carnival, DRISHTI .<br><br>
 
-Would you be thrilled if those books were replaced with roaring engines, rhythmic beating<br>
+<strong>Topics covered: </strong><br><br>
+* Lectures and design of  automobile <br>
+(Ignition, Braking, Handling,Suspension Chassis, Steering and Exhaust systems) <br>
+* Live demonstration of engine mechanisms. <br>
+* Assembly and Re-assembly of engines.<br>
+* Advanced topics on Turbo , Nitro, Engine control unit, Sensors, and Actuators. <br><br>
 
-pistons and more? If you crave to dive into this dimension of machines, then YES!! You are at the right place.<br>
-
-Wanna discover a new perspective of your existence?<br>
-
-Come to join us at College of Engineering Trivandrum for the Engine Overhauling Workshop on
-
-the 17th and 18th of November as a part of our prestigious tech carnival, DRISHTI.<br><br>
-
-Topics to be covered:<br><br>
-
-1.Basic components of a motorcycle<br>
-
-2.Ignition, Braking, Handling, Steering, and Exhaust systems.<br>
-
-3. Live demonstration of engine mechanisms.<br>
-
-4.Assembly and Reassembly of engines.<br><br>
-<strong>Only 39 seats left!</strong>
+<strong>Workshop highlights : </strong><br><br>
+* All  certificates have a unique ID which can be verified online for authentication.<br>
+* Certificate of completion for all participants <br>
+* Certificate of completion with Distinction ( for top performers ) <br>
+* Drishti certificates <br>
+* Exclusive  access to online study materials and  test series !<br><br>
+Don't miss this chance!
  </p>
 
 
@@ -1510,6 +1508,50 @@ Topics to be covered:<br><br>
     modalTarget :'constructionModal'
   });
 
+
+
+
+const app = document.getElementById('root');
+
+const logo = document.createElement('img');
+logo.src = 'logo.png';
+
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
+
+app.appendChild(logo);
+app.appendChild(container);
+
+var request = new XMLHttpRequest();
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.onload = function () {
+
+ // Begin accessing JSON data here
+ var data = JSON.parse(this.response);
+ if (request.status >= 200 && request.status < 400) {
+   data.forEach(movie => {
+     const card = document.createElement('div');
+     card.setAttribute('class', 'card');
+
+     const h1 = document.createElement('h1');
+     h1.textContent = movie.title;
+
+     const p = document.createElement('p');
+     movie.description = movie.description.substring(0, 300);
+     p.textContent = `${movie.description}...`;
+
+     container.appendChild(card);
+     card.appendChild(h1);
+     card.appendChild(p);
+   });
+ } else {
+   const errorMessage = document.createElement('marquee');
+   errorMessage.textContent = `Gah, it's not working!`;
+   app.appendChild(errorMessage);
+ }
+}
+
+request.send();
 </script>
 </body>
 </html>

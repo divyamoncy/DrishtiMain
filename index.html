@@ -9,6 +9,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/paper.min.css">
     <link rel="stylesheet" type="text/css" href="css/mainpage.css">
     <link rel="shortcut icon" href="drishblack.png">
@@ -157,6 +158,48 @@
       </a>
 
     </div>
+
+
+     <div class="sm-12 md-6 lg-5 col align-middle">
+
+      <a href="informals.html" >
+
+      <!-- <a href="events.html" > -->
+
+         <div class="card card-paper card3" id="workshops">
+              <div class="card-body tile" >
+                  <img src="img/informal.svg">
+                  <h4 class="card-title" style="text-align: center;">Informals</h4>
+
+                 <button>Explore Informals!</button>
+              </div>
+          </div>
+      </a>
+
+    </div>
+
+
+
+    <div class="sm-12 md-6 lg-5 col align-middle">
+
+      <a id="demo01" href="#accomodModal" >
+
+      <!-- <a href="events.html" > -->
+
+         <div class="card card-paper card3" id="workshops">
+              <div class="card-body tile" >
+                  <img src="img/accomodation.svg">
+                  <h4 class="card-title" style="text-align: center;">Accommodation</h4>
+
+                 <button>Register</button>
+              </div>
+          </div>
+      </a>
+
+    </div>
+
+
+
 </div>
       
 
@@ -206,7 +249,54 @@ Ankith +91 9495337488
   </div>
 </div>
 
-<script> document.querySelectorAll('a[href^="#scrolltarget"]').forEach(anchor => {
+
+
+
+<!--accomod-->
+<div id="accomodModal" style="overflow: hidden;">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-accomodModal">
+          <a href="index.html"><h2 style="margin: 2vh;">X</h2> </a>
+    </div>
+
+     <div class="modal-content" color="#ffffff" style="border-color: rgba(0,0,0,0);box-shadow: none;">
+                  <!--Your modal content goes here-->
+        <article class="article">
+            <div class="row">
+       
+        <div class="sm-12 md-12 lg-12 col align-middle" style="padding: 5vh;margin: auto;">
+          <h1 class="article-title" align="center" >Drishti Accommodation</h1>
+          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;">
+            To avail, accommodation, register at the link given below. Payment for accommodation will be on-spot. For any queries, contact<br><br> 
+<strong>Ananthu Uthaman 9947731495<br>Adithya Prakash 8943532311</strong>
+ </p>
+
+
+          
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSelXJZOFZ2z-5ZORUMOTyzf7LA5Nrm6c_utn72YUFMR3-8ezA/viewform?usp=sf_link" target="_blank" style="background: transparent;text-align: center; ">  <button style="margin-top: 20px; " >Register</button></a>
+        </div>
+            </div>
+         </article>
+
+      </div>
+</div>
+<!--accomod ENDS-->
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/animatedModal.min.js"></script>
+<script type="text/javascript">
+  $("#demo01").animatedModal({
+    color: '#fff',
+    modalTarget:'accomodModal'
+  });
+  
+
+document.querySelectorAll('a[href^="#scrolltarget"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -217,6 +307,7 @@ Ankith +91 9495337488
     });
 });
 </script>
+
 <script type="text/javascript">$(document).ready(function() {
     // Configure/customize these variables.
     var showChar = 300;  // How many characters are shown by default
