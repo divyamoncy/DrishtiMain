@@ -421,6 +421,9 @@ Clear your calendars and call your friends. It's time to put on your learning ca
       </div>
 </div>
 
+
+<!-- IA herakles-->
+
 <div id="iaheraklesModal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
     <div class="close-iaheraklesModal">
@@ -803,7 +806,7 @@ Convinced yet? Register as teams of five in the link given below. Hurry, seats a
  Pre-requisite: Laptop<br><br>
  <strong>Hurry!Only 4 left!</strong>
   </p>
-  <a href="https://www.yepdesk.com/product-design" target="_blank" style="background: transparent; "><button style="margin-top: 20px;" >Register now!</button></a>
+  <button style="margin-top: 20px;" >Sold out!</button>
 
   <br>
           <p style="font-style: italic;">For accommodation info, refer home page.</p>
@@ -1575,47 +1578,28 @@ Don't miss this chance!
 
 
 
-const app = document.getElementById('root');
+// const app = document.getElementById('root');
 
-const logo = document.createElement('img');
-logo.src = 'logo.png';
+// const logo = document.createElement('img');
+// logo.src = 'logo.png';
 
-const container = document.createElement('div');
-container.setAttribute('class', 'container');
+// const container = document.createElement('div');
+// container.setAttribute('class', 'container');
 
-app.appendChild(logo);
-app.appendChild(container);
+// app.appendChild(logo);
+// app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.open('GET', 'https://www.yepdesk.com/rest/v1/events/5bd37043e4b0eea4c8fd740f/registration/remainingcount', true);
 request.onload = function () {
 
  // Begin accessing JSON data here
- var data = JSON.parse(this.response);
- if (request.status >= 200 && request.status < 400) {
-   data.forEach(movie => {
-     const card = document.createElement('div');
-     card.setAttribute('class', 'card');
-
-     const h1 = document.createElement('h1');
-     h1.textContent = movie.title;
-
-     const p = document.createElement('p');
-     movie.description = movie.description.substring(0, 300);
-     p.textContent = `${movie.description}...`;
-
-     container.appendChild(card);
-     card.appendChild(h1);
-     card.appendChild(p);
-   });
- } else {
-   const errorMessage = document.createElement('marquee');
-   errorMessage.textContent = `Gah, it's not working!`;
-   app.appendChild(errorMessage);
- }
+ var data = JSON.stringify(this.response);
+ console.log(data);
 }
 
-request.send();
+
+
 </script>
 </body>
 </html>
