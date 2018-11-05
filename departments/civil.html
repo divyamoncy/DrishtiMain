@@ -79,23 +79,13 @@
                <div class="card-body wstile" >
                    <img src="../img/workshops/3dsmax.svg">
                    <h4 class="card-title wsname" style="text-align: center;">3DS MAX</h4>
-                   <h5 class="card-subtitle"></h5>
+                   <h5 class="card-subtitle" style="color:white;">|</h5>
                </div>
            </div>
        </a>
     </div>
 
-    <div class="sm-12 md-3 lg-3 col align-middle">
-    <a id="demo101" href="#productDesignModal" >
-       <div class="card card-paper card3" id="workshops">
-            <div class="card-body wstile" >
-                <img src="../img/workshops/proddesign.svg">
-                <h4 class="card-title wsname" style="text-align: center;">Product Design</h4>
-                <h5 class="card-subtitle">Herakles Racing</h5>
-            </div>
-        </div>
-    </a>
-   </div>
+
 
 
 
@@ -110,6 +100,23 @@
           </div>
       </a>
    </div>
+
+
+   <div class="sm-12 md-3 lg-3 col align-middle">
+     <a id="demo103" href="#projectModal" >
+        <div class="card card-paper card3" id="workshops">
+             <div class="card-body wstile" >
+                 <img src="../img/workshops/projectmanagement.svg">
+                 <h4 class="card-title wsname" style="text-align: center;">Project Management</h4>
+                 <h5 class="card-subtitle" style="color:white;">|S</h5>
+             </div>
+         </div>
+     </a>
+  </div>
+
+
+
+</div>
 
 
 
@@ -164,6 +171,70 @@ Ankith +91 9495337488
 
 <!--FOOTER ENDS-->
 
+
+ <div id="projectModal">
+              <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="close-projectModal">
+                <a href="#"><h2 style="margin: 2vh;">X</h2> </a>
+          </div>
+
+           <div class="modal-content" color="#ffffff">
+                        <!--Your modal content goes here-->
+              <article class="article">
+                  <div class="row">
+              <div class="sm-12 md-4 lg-4 col align-middle"  style="padding: 2vh;margin: 0">
+                <img src="../img/workshops/project.jpeg" class="wsmodalimage" >
+              </div>
+              <div class="sm-12 md-8 lg-8 col align-middle" style="padding: 5vh;margin: 0">
+                <h1 class="article-title" align="center" >Project Management</h1>
+                <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;"><strong>Ever wondered how huge civil engineering projects get managed in
+
+               an efficient manner? Ever thought of the different aspects considered during the management process?</strong><br><br>
+               This DRISHTI , we bring you the Project Management Workshop to create deep
+                  industry knowledge on the responsibilities of associates in any
+               construction project. This will provide you with an ideal skill set for a distinguished quantity surveyor.<br><br>
+               Workshop in Construction Project Management focusing on:-<br>
+
+               * Typical construction project management in practice.<br>
+
+               * Various trades and associated skill sets in construction project management.<br>
+
+               * Entry option for freshers in various construction project management trades.<br>
+                <strong></strong>
+                </p>
+                <a href="https://www.yepdesk.com/project-management-bim" target="_blank" style="background: transparent; "><button style="margin-top: 20px;" >Register now!</button></a>
+
+
+                <br>
+               <p style="font-style: italic;">For accommodation info, refer home page.</p>
+
+                <div class="row">
+                  <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0; margin-top: 1vh;">
+                    <h3 style="margin:0; font-size: 1.4rem;">Venue</h3><br/>
+                    <p style="margin:0">College of Engineering Trivandrum</p>
+                  </div>
+                  <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+                    <h3 style="margin:0;font-size: 1.4rem;">Date & Time</h3><br/>
+                    <p style="margin:0">17 & 18 November 2018<br/>
+                    </p>
+                  </div>
+                   <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+                    <h3 style="margin:0;font-size: 1.4rem;">Registration Fee</h3><br/>
+                    <p style="margin:0">INR 250 per head</p>
+                  </div>
+                   <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+                    <h3 style="margin:0;font-size: 1.4rem;">Contact</h3><br/>
+                    <p style="margin:0">Amal Jose : 8547233760<br>Mariya Jose : 8606933448</p>
+                  </div>
+                </div>
+
+              </div>
+                  </div>
+               </article>
+
+            </div>
+      </div>
+
 <!--autocad-->
 
 <div id="autocadModal">
@@ -188,7 +259,7 @@ College of Engineering Trivandrum presents in connection with DRISHTI, an AutoCA
 training class provided by CADD Centre Trivandrum. Come and learn to ace and tweak the designs
 to your taste. So what are you waiting for? Hurry up and confirm your participation.<br><br>
 <strong>CADD Centre Certification provided</strong><br>
-<strong>Hurry! Only 30  seats left.</strong><br></p>
+</p>
 
  <a href="https://www.yepdesk.com/autocad" target="_blank" style="background: transparent; "><button style="margin-top: 20px;" >Register now!</button></a>
 
@@ -314,7 +385,7 @@ GPS survey workshop focuses on:<br><br>
 - Lecture session on different types of GPS survey methods<br>
 - Introduction to differential GPS survey and corrections<br>
 - Practical session on establishing GPS coordinate and survey based on benchmark in the field<br><br>
-<strong>44 seats left!</strong><br>
+<br>
 Register at the link below
   </p>
   <a href="https://www.yepdesk.com/gps-survey" target="_blank" style="background: transparent; "><button style="margin-top: 20px;" >Register now!</button></a>
@@ -511,6 +582,10 @@ $("#demo101").animatedModal({
  color: '#fff',
  modalTarget :'productDesignModal'
 });
+ $("#demo103").animatedModal({
+    color: '#fff',
+    modalTarget :'projectModal'
+  });
 
 
 </script>
