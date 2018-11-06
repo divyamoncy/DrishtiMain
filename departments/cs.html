@@ -90,19 +90,23 @@
                <div class="card-body wstile" >
                    <img src="../img/workshops/chatbot.svg">
                    <h4 class="card-title wsname" style="text-align: center;">Chat Bot</h4>
-                   <h5 class="card-subtitle">CS Association  <span style="color:red;">NEW!</span></h5>
+                   <h5 class="card-subtitle">CS Association<span style="color:red;">NEW!</span></h5>
                </div>
            </div>
        </a>
     </div>
 
-
-
-
-
-
-
-
+    <div class="sm-12 md-3 lg-3 col align-middle">
+       <a id="demo91" href="#codingModal" >
+          <div class="card card-paper card3" id="workshops">
+               <div class="card-body wstile" >
+                   <img src="../img/workshops/competitive coding.svg">
+                   <h4 class="card-title wsname" style="text-align: center;">Competitive Coding Workshop</h4>
+                   <h5 class="card-subtitle">CS Association<span style="color:red;">NEW!</span></h5>
+               </div>
+           </div>
+       </a>
+    </div>
 
     <div class="sm-12 md-3 lg-3 col align-middle">
     <a id="demo46" href="#hyperledgerModal" >
@@ -110,13 +114,11 @@
             <div class="card-body wstile" >
                 <img src="../img/workshops/blockchain3.svg">
                 <h4 class="card-title wsname" style="text-align: center; ">Blockchain with Hyperledger</h4>
-                <h5 class="card-subtitle" >CS Association  <span style="color:red;">NEW!</span></h5>
+                <h5 class="card-subtitle" >CS Association<span style="color:red;">NEW!</span></h5>
             </div>
         </div>
     </a>
  </div>
-
-
 
  <div class="sm-12 md-3 lg-3 col align-middle">
       <a id="demo09" href="#mlpythonModal" >
@@ -513,6 +515,74 @@ There will also be a question and answer session with the master himself.<br><br
 
 
 
+ <!-- competitive coding-->
+
+<div id="codingModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-codingModal">
+          <a href="#"><h2 style="margin: 2vh;">X</h2> </a>
+    </div>
+
+     <div class="modal-content" color="#ffffff">
+                  <!--Your modal content goes here-->
+        <article class="article">
+            <div class="row">
+        <div class="sm-12 md-4 lg-4 col align-middle"  style="padding: 2vh;margin: 0">
+          <img src="../img/workshops/coding.jpg" class="wsmodalimage" >
+        </div>
+        <div class="sm-12 md-8 lg-8 col align-middle" style="padding: 5vh;margin: 0">
+				<h1 class="article-title" align="center"> Competitive Coding Workshop</h1> 
+          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;"><strong>Want to crack a coding interview ? Wish to see yourself at the top of the leaderboard in an online programming contest ? We can give you the perfect start ! </strong> 
+CS Department and ProCoders Club CET presents the ‘Competitive Coding Workshop’. <br><br>
+Problem solving is one top skill on demand to any organization. The role of programmers as problem solvers is inevitable. A programmer needs to be good at math, logic, design and implementation skills. A good programmer is like a good artist.  Competitive programming is one domain that tests all the skills a programmer needs to have where you compete with many others to code a puzzle down. It is one sport that involves a lot of thought process and creativity. 
+<br><br>
+Through the hands-on workshop we intend to cover some important algorithms and standard problems on multiple domains to strengthen your algorithmic skills. The workshop spans for two days and the topics we cover include : 
+<br><br>
+Arrays and Strings<br>
+Recursion<br>
+Backtracking<br>
+Number Theory<br>
+Dynamic Programming<br>
+Greedy Techniques<br>
+Lists, Trees and Graphs<br>
+<br>
+Participants are expected to bring laptops.<br><br>
+        </p>
+
+          <a href="https://www.yepdesk.com/coding-competition1" target="_blank" style="background: transparent; "><button style="margin-top: 20px;" >Register now!</button></a>
+
+
+
+         <p style="font-style: italic;">For accommodation info, refer home page.</p>
+          <div class="row">
+            <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0; margin-top: 1vh;">
+              <h3 style="margin:0; font-size: 1.4rem;">Venue</h3><br/>
+              <p style="margin:0">College of Engineering Trivandrum</p>
+            </div>
+            <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+              <h3 style="margin:0;font-size: 1.4rem;">Date & Time</h3><br/>
+              <p style="margin:0">17 & 18 November 2018<br/>
+              </p>
+            </div>
+             <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+              <h3 style="margin:0;font-size: 1.4rem;">Registration Fee</h3><br/>
+              <p style="margin:0">INR 850</p>
+            </div>
+             <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+              <h3 style="margin:0;font-size: 1.4rem;">Contact</h3><br/>
+              <p style="margin:0">Gais Ameer 7356951545
+<br>
+              Sriannaporani 6282806606</p>
+            </div>
+          </div>
+
+        </div>
+            </div>
+         </article>
+
+      </div>
+</div>
+
 
 
 
@@ -545,6 +615,10 @@ modalTarget :'chatbotModal'
 $("#demo10").animatedModal({
 color: '#fff',
 modalTarget :'unityModal'
+});
+$("#demo91").animatedModal({
+color: '#fff',
+modalTarget :'codingModal'
 });
 
 
