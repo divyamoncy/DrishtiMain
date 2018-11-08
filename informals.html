@@ -225,10 +225,10 @@
 
 
  <div class="sm-12 md-3 lg-3 col align-middle">
-      <a id="demo03" href="" >
+      <a id="demo33" href="#pubgModal" >
          <div class="card card-paper card3" id="workshops">
               <div class="card-body wstile" >
-                  <img src="img/informals/pubg.jpeg">
+                  <img src="img/informals/pubgdp.jpeg">
                   <h4 class="card-title wsname" style="text-align: center;">PUBG Battle</h4>
                  
               </div>
@@ -404,6 +404,68 @@ Here there you are...<br><br>
 <!--escape the room ends-->
 
 
+<!-- pubg modal-->
+
+
+<div id="pubgModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-pubgModal">
+          <a href="#"><h2 style="margin: 2vh;">X</h2> </a>
+    </div>
+
+     <div class="modal-content" color="#ffffff">
+                  <!--Your modal content goes here-->
+        <article class="article">
+            <div class="row">
+        <div class="sm-12 md-4 lg-4 col align-middle"  style="padding: 2vh;margin: 0">
+          <img src="img/informals/pubg.jpeg" class="wsmodalimage" >
+        </div>
+        <div class="sm-12 md-8 lg-8 col align-middle" style="padding: 5vh;margin: 0">
+          <h1 class="article-title" align="center" >PUBG Battle</h1>
+          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;"><strong>Get your teammates ready. Check your chutes. Get your snipers up and your pans on defence . Jump into the battlefield. Fight one for all and all for one.</strong><br><br>
+
+Drishti presents PUBG Tournament in association with IIIE CET . Fight it out in a team of two at the map of Erangel.<br><br>
+<strong>Rules</strong><br><br>
+1. Only for college students.<br>
+2. If any malpractices is detected during the game we have the right to disqualify the team.<br>
+3. Decisions of the coordinators will be final.<br>
+4. If tournament is abandoned due to any valid reason then the money will be refunded to the contestants.<br>
+5. Emulators are not allowed.<br>
+
+</p>
+
+ 
+
+
+          <div class="row">
+            <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0; margin-top: 1vh;">
+              <h3 style="margin:0; font-size: 1.4rem;">Venue</h3><br/>
+              <p style="margin:0">College of Engineering Trivandrum</p>
+            </div>
+            <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+              <h3 style="margin:0;font-size: 1.4rem;">Date & Time</h3><br/>
+              <p style="margin:0">17 & 18 November 2018<br/>
+              </p>
+            </div>
+             <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+              <h3 style="margin:0;font-size: 1.4rem;">Registration Fee</h3><br/>
+              <p style="margin:0">INR 100 per team</p>
+            </div>
+             <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+              <h3 style="margin:0;font-size: 1.4rem;">Contact</h3><br/>
+              <p style="margin:0">Tom Tejus 7510768207 </p>
+               <p style="margin:0">Arya Sreekanth 9447495594</p>
+            </div>
+          </div>
+
+        </div>
+            </div>
+         </article>
+
+      </div>
+</div>
+
+
 
 
 
@@ -420,6 +482,11 @@ Here there you are...<br><br>
   $("#demo01").animatedModal({
     color: '#fff',
     modalTarget:'escapeModal'
+  });
+
+  $("#demo33").animatedModal({
+    color: '#fff',
+    modalTarget:'pubgModal'
   });
 </script>
 
