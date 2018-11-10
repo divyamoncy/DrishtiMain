@@ -149,6 +149,26 @@
 
     </div>
 
+
+
+     <div class="sm-12 md-6 lg-5 col align-middle">
+
+      <a id="demo02" href="#proshowModal" >
+
+      <!-- <a href="events.html" > -->
+
+         <div class="card card-paper card3" id="workshops">
+              <div class="card-body tile" >
+                  <img src="img/proshow.svg">
+                  <h4 class="card-title" style="text-align: center;">Proshows</h4>
+
+                 <button>Explore Proshows!</button>
+              </div>
+          </div>
+      </a>
+
+    </div>
+
    
     <div class="sm-12 md-6 lg-5 col align-middle">
       <a href="workshops.html" >
@@ -306,6 +326,80 @@ Ankith +91 9495337488
 <!--accomod ENDS-->
 
 
+<!--proshows-->
+<div id="proshowModal" style="overflow: hidden;">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-proshowModal">
+          <a href="index.html"><h2 style="margin: 2vh;">X</h2> </a>
+    </div>
+
+     <div class="modal-content" color="#ffffff" style="border-color: rgba(0,0,0,0);box-shadow: none;">
+                  <!--Your modal content goes here-->
+        <article class="article">
+            <div class="row">
+       
+        <div class="sm-12 md-12 lg-12 col align-middle" style="padding: 5vh;margin: auto;">
+          <h1 class="article-title" align="center" >Proshows</h1>
+
+        <div class="row flex-center">
+          <div class="sm-12 md-4 lg-4 col">
+          <img src="img/nina.jpg" style="margin: auto;height:50vh; border-radius: 0;border-color: rgba(0,0,0,0);"></div>
+           <div class="sm-12 md-8 lg-8 col align-middle">
+          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;">
+           Nina Suerte's gigs aren't regular performances, they are spectacular shows and they thrill the crowd, <strong>HARD!</strong><br><br>
+This Drishti, on <strong>November 17, 7 PM</strong><br>
+We've <strong>Nina Suerte</strong> in the house, bringing her beats all the way from Poland.<br>
+Get Ready Folks, 
+'Cause she's gonna set us <strong>AFLAME!</strong>
+<br><br>
+<strong>Contact</strong><br>
+Akshay Raj 8281514270<br>
+Keerthana 9061580140<br>
+Bharath 9946098789
+
+
+ </p></div>
+
+
+
+</div><hr>
+
+
+
+ <div class="row flex-center">
+          <div class="sm-12 md-4 lg-4 col">
+          <img src="img/spunk.jpg" style="margin: auto;height:50vh; border-radius: 0;border-color: rgba(0,0,0,0);"></div>
+           <div class="sm-12 md-8 lg-8 col align-middle">
+          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;">
+          <strong>Witness the sound of Rock blend into the sepias of Bollywood Music.</strong><br><br>
+
+This year, Drishti brings <strong>SPUNK ( Seedha Palaat Udhar Nautanki Kahike)</strong>  to electrify the dull blues of the night!<br><br>
+
+Get ready for the reverberations to shake your spines on the <strong>18th of November at 7pm<br>
+Be there.</strong><br><br>
+<strong>Contact</strong><br>
+Akshay Raj 8281514270<br>
+Keerthana 9061580140<br>
+Bharath 9946098789
+
+ </p></div>
+
+
+
+</div>
+
+
+          
+
+        </div>
+            </div>
+         </article>
+
+      </div>
+</div>
+<!--proshow ENDS-->
+
+
 
 
 
@@ -316,6 +410,11 @@ Ankith +91 9495337488
   $("#demo01").animatedModal({
     color: '#fff',
     modalTarget:'accomodModal'
+  });
+
+  $("#demo02").animatedModal({
+    color: '#fff',
+    modalTarget:'proshowModal'
   });
   
 
