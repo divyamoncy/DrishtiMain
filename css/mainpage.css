@@ -12,7 +12,15 @@ div.bar1,div.bar2,div.bar3{
 nav a{
   border-bottom-width: 0px;
 }
+.archimodalimage{
+   margin: auto;
+  object-fit: cover;
+  border-radius: 0px;
+  border-color:rgba(0,0,0,0);
+  width:90%;
 
+
+}
 .scroll-downs {
   position: absolute;
   top: 0;
@@ -389,6 +397,8 @@ article .article-title{
 .wsmodalimage{
   height:50vh;
 }
-
+.archimodalimage{
+  width:100%;
+}
 
   }
