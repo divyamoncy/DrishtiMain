@@ -60,6 +60,19 @@
 
   <div class="row flex-center" >
 
+
+     <div class="sm-12 md-3 lg-3 col align-middle">
+      <a id="demo22" href="#disasterModal" >
+         <div class="card card-paper card3" id="workshops">
+              <div class="card-body wstile" >
+                  <img src="../img/workshops/disastermanagement.svg">
+                  <h4 class="card-title wsname" style="text-align: center;">Disaster Management</h4>
+                  <h5 class="card-subtitle">SAE  <span style="color:red;">NEW!</span></h5>
+              </div>
+          </div>
+      </a>
+    </div>
+
     <div class="sm-12 md-3 lg-3 col align-middle">
       <a id="demo01" href="#3dprintModal" >
          <div class="card card-paper card3" id="workshops">
@@ -688,6 +701,65 @@ DHIRAJ 9048058902</p>
        </div>
  </div>
 
+<!-- disaster modal-->
+
+
+<div id="disasterModal">
+         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+     <div class="close-disasterModal">
+           <a href="#"><h2 style="margin: 2vh;">X</h2> </a>
+     </div>
+
+      <div class="modal-content" color="#ffffff">
+                   <!--Your modal content goes here-->
+         <article class="article">
+             <div class="row">
+         <div class="sm-12 md-4 lg-4 col align-middle"  style="padding: 2vh;margin: 0">
+           <img src="../img/workshops/disaster.png" class="wsmodalimage" >
+         </div>
+         <div class="sm-12 md-8 lg-8 col align-middle" style="padding: 5vh;margin: 0">
+           <h1 class="article-title" align="center" >Disaster Management</h1>
+           <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;">Natural calamities do occur. But, from those situations always rise the incredible stories of the common people breaking barriers. Are you one of those unique individuals with outlandish and quaint ideas, on how to face a disaster, thereby saving lives and property? Do you have what it takes to hold your nerves, observe and come up with phenomenal ideas during a time of crisis?<br><br>
+
+<strong>Then College of Engineering Trivandrum is place where you ought to be this November!!!</strong><br><br> 
+
+DRISHTI presents a 2 day workshop on DISASTER MANAGEMENT on the 17th and 18th, 2018 conducted by SAE club of our college. 
+All the participants will be addressed by , speaker on the topics of disaster management and recovery, on the various aspects under the rubric of disaster management, on the first day. The following day will feature a competition for the participants, where they are required to construct a device that will be of use during a time of crisis, from scratch. Prizes and certificates will be awarded to the winners and participants. Exceptional ideas will be identified and promoted for better recognition. <br><br>
+
+           </p>
+           <a href="https://www.yepdesk.com/disaster-management-workshop" target="_blank" style="background: transparent; "><button style="margin-top: 20px;" >Register now!</button></a>
+
+
+           <br>
+          <p style="font-style: italic;">For accommodation info, refer home page.</p>
+
+           <div class="row">
+             <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0; margin-top: 1vh;">
+               <h3 style="margin:0; font-size: 1.4rem;">Venue</h3><br/>
+               <p style="margin:0">College of Engineering Trivandrum</p>
+             </div>
+             <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+               <h3 style="margin:0;font-size: 1.4rem;">Date & Time</h3><br/>
+               <p style="margin:0">17 & 18 November 2018<br/>
+               </p>
+             </div>
+              <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+               <h3 style="margin:0;font-size: 1.4rem;">Registration Fee</h3><br/>
+               <p style="margin:0">INR 300 per head (Team of 2 or individual)</p>
+             </div>
+              <div class="sm-12 md-6 lg-6 col align-middle" style="padding: 0;margin-top: 1vh;">
+               <h3 style="margin:0;font-size: 1.4rem;">Contact</h3><br/>
+               <p style="margin:0">Manusankar S 8848486005</p>
+             </div>
+           </div>
+
+         </div>
+             </div>
+          </article>
+
+       </div>
+ </div>
+
 
 
 
@@ -733,6 +805,11 @@ DHIRAJ 9048058902</p>
            $("#demo100").animatedModal({
       color: '#fff',
       modalTarget :'industrialModal'
+    });
+
+  $("#demo22").animatedModal({
+      color: '#fff',
+      modalTarget :'disasterModal'
     });
 
 
