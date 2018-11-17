@@ -72,7 +72,8 @@
 
 
 
-        <img alt="logo" src="img/drishtianimated.svg" class="drishtilogo" style="border:none;border-radius: 0px;">   
+        <img alt="logo" src="img/drishtianimated.svg" class="drishtilogo" style="border:none;border-radius: 0px;">  
+        <a id="demo01" href="#hartalModal"></a> 
         
 <span class="scroll-btn" id="scrollbutton">
   <a href="#scrolltarget">
@@ -456,12 +457,61 @@ Bharath 9946098789
 <!--proshow ENDS-->
 
 
+<!-- hartal-->
+
+<div id="hartalModal" style="overflow: hidden;background: white;">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-hartalModal">
+          <a href="index.html"><h2 style="margin: 2vh;">X</h2> </a>
+    </div>
+
+     <div class="modal-content" color="#ffffff" style="border-color: rgba(0,0,0,0);box-shadow: none;">
+                  <!--Your modal content goes here-->
+        <article class="article">
+            <div class="row">
+       
+        <div class="sm-12 md-12 lg-12 col align-middle" style="padding: 5vh;margin: auto;">
+          <h1 class="article-title" align="center" >DRISHTI</h1>
+          <p class="text-lead" style="margin:0;font-size: 1.0rem; text-align: justify;">
+            
+
+No changes in the schedule for today(Sat,17/11/18)<br><br>
+
+Those who are stuck in Railway Station/Bus Stand, Call:
+
+<strong>Shamsu-9656281063<br>
+Saurav-9746095941<br>
+Afnan-8113829223<br>
+Sangeeth-9544244167</strong>
+ </p>
+
+
+          
+
+        </div>
+            </div>
+         </article>
+
+      </div>
+</div>
+
 
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/animatedModal.min.js"></script>
+<script type="text/javascript">
+   $("document").ready(function() {
+
+        $("#demo01").animatedModal({
+          modalTarget:'hartalModal'
+        });
+        $("#demo01").trigger('click');
+
+});
+        
+</script>
 <script type="text/javascript">
   $("#demo01").animatedModal({
     color: '#fff',
